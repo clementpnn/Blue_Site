@@ -1,0 +1,281 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+body {
+  background-color: #181C56;
+}
+
+.container {
+  width: 90%;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+
+/* Nav Bar */
+
+.container-nav-bar {
+  width: 100%;
+  height: 5vh;
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  cursor: pointer;
+  margin-right: auto;
+  width: 6vw;
+  max-width: 120px;
+  min-width: 100px;
+}
+
+.list-nav {
+  display: flex;
+}
+
+.items-nav {
+  list-style-type: none;
+  margin: 0 1vw;
+  font-size: 1.125em;
+}
+
+.items-nav a {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  color: #fff;
+  cursor: pointer;    
+}
+
+.items-nav a:hover {
+  color: #fec952;
+}
+
+.menu {
+  display: none;
+  cursor: pointer;
+}
+
+.menu.ative {
+  position: relative;
+  height: 70px;
+  
+}
+
+
+/* Body */
+
+.container-body {
+  width: 100%;
+  height: 85vh;
+  display: flex;
+  align-items: center;
+}
+
+/* left */
+
+.body-left {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.container-txt {
+  width: 90%;
+}
+
+.title-yellow {
+  color: #fec952;
+}
+
+h2 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 800;
+  font-size: 3em;
+  line-height: 1;
+}
+
+h1 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 800;
+  font-size: 3.375em;
+  line-height: 1;
+  color: #fff;
+}
+
+.txt {
+  width: 80%;
+}
+
+.under-title {
+  margin: 2.5vh 0;
+  display: block;
+  color: #fff;
+  font-family: 'Inter', sans-serif;
+  font-weight: 100;
+  font-size: 1.125em;
+}
+
+.btn {
+  width: 8vw;
+  max-width: 170px;
+  min-width: 150px;
+  padding: 1vh;
+  border-radius: 7px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+}
+
+.btn-primary {
+  margin-right: 2vw;
+  background-color: #fff;
+  border: 1px solid #181C56;
+  color: #181C56;
+}
+
+.btn-primary:hover {
+  background-color: #181C56;
+  border: 1px solid #fff;
+  color: #fff;
+}
+
+.btn-secondary {
+  background-color: #181C56;
+  border: 1px solid #fff;
+  color: #fff;
+}
+
+.btn-secondary:hover {
+  background-color: #fff;
+  border: 1px solid #181C56;
+  color: #181C56;
+}
+
+/* right */
+
+.body-rigth {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(9, 1fr);
+  grid-gap: 2vh;
+  width: 90%;
+  height: 60%;
+}
+
+.card {
+  height: auto;
+  border-radius: 40px;
+  background-color: #3E3099;
+}
+
+.card-lt {
+
+  grid-column: 1;
+  grid-row: 1 / span 4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.round {
+  width: 3vw;
+  height: 3vw;
+  max-width: 65px;
+  max-height: 65px;
+  min-width: 45px;
+  min-height: 45px;
+  border-radius: 50%;
+}
+
+.top {
+  background-color: #181C56;
+}
+
+.mid {
+  background-color: #fec952;
+}
+
+.bot {
+  background-color: #fff;
+}
+
+.card-lb {
+  grid-column: 1;
+  grid-row: 5 / span 5;
+  background: url(https://www.graphik-impact.com/wp-content/uploads/2021/03/illustration-design-graphique.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.card-rt {
+  grid-column: 2;
+  grid-row: 1 / span 3;
+  background: url(https://assets.website-files.com/60eb5de7c30b2b734f31578d/6154877bf37f3a7af1b1a71c_5dbaa2c0e51589448376e7a2_Oeil%2520gif%2520.gif);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+}
+
+.card-rb {
+  grid-column: 2;
+  grid-row: 4 / span 6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.verti {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 3.375em;
+  color: #fff;
+  transform: rotate(90deg);
+}
+
+
+/* Footer */
+
+.container-footer {
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.marquee {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 2.250em;
+  color: #fec952;
+  white-space: nowrap;
+  animation: marquee 25s infinite linear;
+}
+
+.marquee::after {
+  content: "HTML - CSS - SASS - JavaScript - PHP - SQL - HTML - CSS - SASS - JavaScript - PHP - SQL - HTML - CSS - SASS - JavaScript - PHP - SQL - ";
+}
+
+@keyframes marquee {
+  0% {
+      transform: translateX(0);
+  }
+
+  100% {
+      transform: translateX(-50%);
+  }
+}
