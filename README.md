@@ -1,9 +1,9 @@
 # Blue_Site
 <br>
-🇺🇸 Blue_Site is a 100% front end site on the theme of the color blue. The goal was to use flex box and grid to improve myself in css.
+🇺🇸 Blue_Site is a 100% front end site on the theme of the color blue. The goal was to use flex box and grid.
 <br>
 <br>
-🇫🇷 Site_Bleu est un site 100 % front end sur le thême de la couleur bleu. Le but était d'utiliser flex box et grid pour m'améliorer en css.
+🇫🇷 Site_Bleu est un site 100 % front end sur le thême de la couleur bleu. Le but était d'utiliser flex box et grid.
 <br>
 <br>
 _________________________________________________________________________
